@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+
+<body>
+    <h2>login</h2>
+    <label for="username">username</label>
+    <input type="text" id="username">
+    <br>
+    <label for="password">password</label>
+    <input type="password" id="password">
+    <br>
+    <button onclick="login()">Login</button>
+
+    <script>
+        function login() {
+            const username = 'rahmialiqla' //untuk membat variabel tetap samadengan tag var tapi kalo var itu tetap 
+            const password = 'rahmi'
+
+            //tangkap input user
+            let userInput = document.getElementById('username').value
+            let passwordInput = document.getElementById('password').value
+
+            if (username == userInput && password == passwordInput) {
+                alert('login berhasil')
+                document.location = 'hasil.html'
+            } else {
+                alert('login gagal')
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
